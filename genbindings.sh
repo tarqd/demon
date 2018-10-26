@@ -1,0 +1,1 @@
+bindgen --whitelist-function='^(nl|nla).*' --whitelist-type='^nl.*' netlink.h -- $(pkg-config --cflags  libnl-3.0 libnl-genl-3.0) > src/netlink-sys.rs
